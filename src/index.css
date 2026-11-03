@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-moss-900: #2C3A15;
+  --color-moss-800: #3E4E24;
+  --color-moss-700: #4B5E2B;
+  --color-moss-600: #556B2F; /* Primary Moss Green */
+  --color-moss-500: #6C814A;
+  --color-moss-400: #8AA16B;
+  --color-moss-200: #C2D1AA;
+  --color-moss-100: #DCE5CC;
+  --color-moss-50: #EDF1E5;
+  
+  --color-apricot-950: #1C1917;
+  --color-apricot-900: #292524;
+  --color-apricot-800: #333333; /* Charcoal slate */
+  --color-apricot-700: #4F4A45;
+  --color-apricot-300: #D8D2BC;
+  --color-apricot-200: #EBE6D3;
+  --color-apricot-100: #F4EFEB;
+  --color-apricot-50: #F5F5DC; /* Creamy beige warm canvas matching Editorial Aesthetic */
+
+  --font-serif: "Noto Serif SC", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-fade-in-up: fadeInUp 0.5s ease-out forwards;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom global rules for the breathing nature "放风感" vibe */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-apricot-50);
+  color: var(--color-apricot-800);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Elegant custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-apricot-50);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-apricot-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-moss-600);
+}
+
+/* Style for rich details list */
+.custom-bullet-list li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.custom-bullet-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--color-moss-600);
+  font-weight: bold;
+}
