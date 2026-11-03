@@ -75,7 +75,7 @@ export const Hero: React.FC = () => {
                 • <strong>实习 2 年+：</strong>有 3 段互联网行业的品牌营销实习（美团校招提前实习、阿里闲鱼暑期实习、网易有道 AI 智能产品推广实习）+ 1 段快消branding实习（雀巢奶粉线）
               </p>
               <p className="leading-relaxed">
-                • <strong>一个不会倒的flag：</strong>在排除不可抗力因素的情况下，<span className="font-bold bg-amber-100 text-amber-950 px-1.5 py-0.5 rounded border border-amber-200/60 shadow-sm inline mx-0.5">未来的career规划会坚定地追求长期主义</span>，在每一段工作机会中、沉淀至少2年+的时间深耕
+                • <strong>一个不会倒的flag：</strong>在排除不可抗力因素的情况下，<span className="font-bold bg-amber-100 text-amber-950 px-1.5 py-0.5 rounded border border-amber-200/60 shadow-sm inline mx-0.5">未来的career规划会坚定地追求长期主义。</span>
               </p>
             </div>
           </motion.div>
